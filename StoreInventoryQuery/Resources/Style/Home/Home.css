@@ -1,0 +1,220 @@
+﻿body {
+    overflow: hidden;
+    outline: none;
+    background-color: #ECECF4;
+}
+.storename {
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em; 
+    padding: 9px 8px 0px 11px;
+    background-color: white;
+    margin-top: 5px;
+}
+#goodsinfodiv {
+    background-color: white;
+    padding: 9px 8px 6px 8px;
+}
+#goodsnamediv {
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    background-color: white;
+    margin-top: 5px;
+    padding: 9px 8px 6px 8px;
+}
+.back {
+    width: 45px;
+    height: 30px;
+    margin-left: 2px; 
+}
+.homeinout {
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    padding: 6px 8px 2px 8px;
+    background-color: white;
+    width: 100%;
+}
+.goodstbody tr{
+    height:30px
+}
+.homeinout2 {
+    background-color: #ECECF4;
+    border-top-right-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+}
+    .back img {
+        margin-top: 4px;
+        margin-left: 5px;
+        float: left;
+    }
+.inputclose {
+    display: inline-block;
+    width: 20px
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+.swal-title {
+    font-size: 18px;
+}
+
+.homeheadtxt { 
+    font-size: 13px;
+    width: 100%;
+    /*    margin-top:-24%;*/
+}
+
+    .homeheadtxt label { 
+        /*    margin-top:-24%;*/
+    } 
+
+.btntxt {
+    margin-top: 20px;
+    text-align: center;
+}
+#sel {
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    height: 34px;
+    width: 24%;
+    background-color: #00A2FF;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.seldivno {
+    background-color: #909090;
+    font-weight: normal;
+    opacity: 0.8;
+    width: 55.1%;
+    color: white;
+    margin-right: 18px;
+    height: 24px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+#sku {
+    height: 100%;
+    border: 0px;
+    BACKGROUND-COLOR: transparent;
+    width: 63.1%;
+    display: inline
+}
+#sku2 {
+    height: 100%;
+    border: 0px;
+    BACKGROUND-COLOR: transparent;
+    width: 80.1%;
+    display: inline
+}
+
+
+
+
+
+
+
+
+
+.tb_table {
+    width: 140%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+    .tb_table tbody {
+        border-top-left-radius: 0.3em;
+        border-top-right-radius: 0.3em;
+        border-bottom-left-radius: 0.3em;
+        border-bottom-right-radius: 0.3em;
+        background-color: #ECECF4;
+        display: block;
+        width: 100%;
+        overflow: auto;
+        height: 111px;
+    }
+
+    .tb_table thead tr {
+        display: block;
+    }
+
+    .tb_table th td:first-child {
+        width: 30px;
+    }
+    .tb_table thead tr td:nth-child(1) {
+        text-align: center;
+        width: 40px;
+        height: 28px;
+    }
+    .tb_table tbody tr td:nth-child(1) {
+        text-align: center;
+        width: 40px;
+        height: 25px;
+    }
+
+    .tb_table thead tr td:nth-child(2) {
+        text-align: center;
+        width: 40px;
+        height: 28px;
+    }
+
+    .tb_table tbody tr td:nth-child(2) {
+        text-align: center;
+        width: 40px;
+        height: 25px;
+    }
+
+
+
+    .tb_table thead tr td:nth-child(3) {
+        text-align: center;
+        width: 75px;
+        height: 28px;
+    }
+
+    .tb_table tbody tr td:nth-child(3) {
+        text-align: center;
+        width: 75px;
+        height: 25px;
+    }
+
+
+
+    .tb_table thead tr td:nth-child(4) {
+        text-align: center;
+        width: 75px;
+        height: 28px;
+    }
+
+    .tb_table tbody tr td:nth-child(4) {
+        text-align: center;
+        width: 75px;
+        height: 25px;
+    }
+
+
+
+    .tb_table thead tr td:nth-child(5) {
+        text-align: center;
+        width: 75px;
+        height: 28px;
+    }
+
+    .tb_table tbody tr td:nth-child(5) {
+        text-align: center;
+        width: 75px;
+        height: 25px;
+    }

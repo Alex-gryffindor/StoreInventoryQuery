@@ -1,0 +1,222 @@
+﻿@{
+    ViewBag.Title = "库存助手";
+} 
+    <link href="~/Resources/Style/Home/Home.css?v=2021070100009" rel="stylesheet" />
+    <div style="width:100%;height:100%">
+        <div class="homeheadtxt">
+            <label class="back">
+                <img src="~/Resources/Img/JT.png" />
+            </label>
+            <label> 库存助手</label>
+
+        </div>
+        <div class="homeinout">
+            <label class="homeinout2">
+                <img src="~/Resources/Img/SS.png" style="margin-left:7px;margin-right:1px" />
+
+
+                @*<input type="text"  id="sku" />*@
+
+                <label style="   " class="seldivno">
+                    <input type="text" value="114L3B50C04UXL" id="sku2" disabled="disabled" />
+
+                    <label class="inputclose">
+                        <img src="~/Resources/Img/close.png" style="margin-top:-3px" />
+                    </label>
+                </label>
+
+                <input type="button" value="查询" id="sel" />
+            </label>
+        </div>
+
+        <div id="goodsnamediv">
+            <img src="~/Resources/Img/goods.png" />
+            <span class="goodsname">可缮写提花开年有损</span>
+        </div>
+        <div style="" class="storename">本店库存（广州K11）</div>
+        <div id="goodsinfodiv" style="overflow: auto; height:150px;text-align:center">
+            <table class="tb_table">
+                <thead>
+                    <tr>
+                        <td  >颜色</td>
+                        <td  >尺码</td>
+                        <td >实际库存</td>
+                        <td  >占用库存</td>
+                        <td >可用库存</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            @*<table style="text-align:center ;width: 120%; display: block; ">
+                <thead style="height:30px;position:sticky">
+                    <tr>
+                        <td width="30">颜色</td>
+                        <td width="30">尺码</td>
+                        <td width="60">实际库存</td>
+                        <td width="60">占用库存</td>
+                        <td width="60">可用库存</td>
+                    </tr>
+                </thead>
+
+                <tbody style="overflow:scroll;background-color: #ECECF4;" class="goodstbody">
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>黑色</td>
+                        <td>S</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                    </tr>
+
+                </tbody>
+
+            </table>*@
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
