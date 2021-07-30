@@ -2,8 +2,9 @@
 @{
     ViewBag.Title = "登陆";
 }
+<script src="~/Scripts/JqueryCookie.js"></script>
 <link href="~/Resources/Style/Login/Index.css" rel="stylesheet" />
-<script src="~/Resources/Scripts/Login/Index.js?v=202107090001"></script>
+<script src="~/Resources/Scripts/Login/Index.js?v=202107160001"></script>
 
 
 
@@ -13,7 +14,7 @@
     <div class="headtxt">
         <img src="~/Resources/Img/logo.png" style="margin-bottom:10px" />
         <div class="TY"></div>
-        <div class="headtxt2">库存助手</div>
+        <div class="headtxt2">快速查询</div>
 
     </div>
     <div id="bodytxt" class="form-group">
@@ -21,12 +22,15 @@
             <img src="~/Resources/Img/user.png" />
             <input type="text" id="name" class="form-controls" placeholder="请输入用户名" />
         </div>
-        <div style="margin:20px 0 10px 0"> </div>
+        <div style="margin:13% 0 10px 0"> </div>
         <div class="inputdiv">
 
             <img src="~/Resources/Img/pwd.png" />
 
             <input type="password" id="pwd" class="form-controls" placeholder="请输入密码" />
+        </div>
+        <div style=" margin-left: 32px;color:white;padding-top:30px">
+            <input type="checkbox" class="ck" /> <span style="font-size:16px">记住密码</span>
         </div>
     </div>
     <div class="btntxt">

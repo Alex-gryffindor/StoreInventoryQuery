@@ -1,18 +1,58 @@
 ﻿body {
+    background-image: url('');
+    background-size: cover;
     overflow: hidden;
     outline: none;
     background-color: #ECECF4;
 }
-.storename {
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em; 
-    padding: 9px 8px 0px 11px;
-    background-color: white;
-    margin-top: 5px;
+.storeinfo {
+    font-size: 15px;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
 }
+    .storeinfo table {
+        width: 100%;
+        margin-top: 2px;
+        background-color: white;
+    }
+ .storeinfo table tbody tr td:nth-child(1) {
+    width:20%;
+    }
+    .storeinfo table tbody tr td:nth-child(2) {
+        overflow: hidden;
+        white-space: normal;
+        word-break:break-all;
+        width: 45%;
+    }
+    .storeinfo table tbody tr:nth-child(2) td:nth-child(1) {
+        color: #9c9b9b;
+    }
+    .storeinfo table tbody tr:nth-child(3) td:nth-child(1) {
+        color: #9c9b9b;
+    }
+    .storeinfo table tbody tr td label{
+       font-weight:bold;
+    }
+.storeinfo table tbody tr td img{
+  
+    width:90%;
+
+}
+    .storename {
+        border-top-left-radius: 0.3em;
+        border-top-right-radius: 0.3em;
+        padding: 9px 8px 0px 11px;
+        background-color: white;
+        margin-top: 5px;
+    }
 #goodsinfodiv {
     background-color: white;
     padding: 9px 8px 6px 8px;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: white;
 }
 #goodsnamediv {
     border-top-left-radius: 0.3em;
@@ -24,6 +64,7 @@
     padding: 9px 8px 6px 8px;
 }
 .back {
+    padding-top:1%;
     width: 45px;
     height: 30px;
     margin-left: 2px; 
@@ -41,6 +82,8 @@
     height:30px
 }
 .homeinout2 {
+    font-size:20px;
+    width:100%;
     background-color: #ECECF4;
     border-top-right-radius: 0.4em;
     border-bottom-right-radius: 0.4em;
@@ -52,6 +95,7 @@
     }
 .inputclose {
     display: inline-block;
+    float:right; 
     width: 20px
 }
 
@@ -64,6 +108,8 @@
 }
 
 .homeheadtxt { 
+    padding-top:6px;
+    display:inline-flex;
     font-size: 13px;
     width: 100%;
     /*    margin-top:-24%;*/
@@ -71,13 +117,18 @@
 
     .homeheadtxt label { 
         /*    margin-top:-24%;*/
-    } 
+    }
+input::-webkit-input-placeholder {
+    font-size: 20px;
+}
 
 .btntxt {
     margin-top: 20px;
     text-align: center;
 }
 #sel {
+    font-size:20px;
+    float:right;
     border-top-left-radius: 0.3em;
     border-top-right-radius: 0.3em;
     border-bottom-left-radius: 0.3em;
@@ -93,6 +144,7 @@
     cursor: pointer;
 }
 .seldivno {
+    margin-top:1.1%;
     background-color: #909090;
     font-weight: normal;
     opacity: 0.8;
@@ -105,14 +157,19 @@
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
-#sku {
+#skulabel {
+    margin-top: 0.8%;
+}
+#sku { 
+    font-size:20px;
     height: 100%;
     border: 0px;
     BACKGROUND-COLOR: transparent;
-    width: 63.1%;
+    width: 100%;
     display: inline
 }
 #sku2 {
+    font-size: 20px;
     height: 100%;
     border: 0px;
     BACKGROUND-COLOR: transparent;
@@ -126,9 +183,10 @@
 
 
 
-
+/*
 
 .tb_table {
+    height:100%;
     width: 140%;
     table-layout: fixed;
     border-collapse: collapse;
@@ -144,7 +202,7 @@
         display: block;
         width: 100%;
         overflow: auto;
-        height: 111px;
+        height: 148px;
     }
 
     .tb_table thead tr {
@@ -152,69 +210,73 @@
     }
 
     .tb_table th td:first-child {
-        width: 30px;
+        width: 60px;
     }
     .tb_table thead tr td:nth-child(1) {
         text-align: center;
-        width: 40px;
-        height: 28px;
+        width: 60px;
+        height: 25px;
     }
     .tb_table tbody tr td:nth-child(1) {
         text-align: center;
-        width: 40px;
+        width: 60px;
         height: 25px;
     }
 
     .tb_table thead tr td:nth-child(2) {
         text-align: center;
-        width: 40px;
+        width: 50px;
         height: 28px;
     }
 
     .tb_table tbody tr td:nth-child(2) {
         text-align: center;
-        width: 40px;
+        width: 50px;
         height: 25px;
     }
+*/
 
-
-
+input::-webkit-input-placeholder {
+    font-size: 13px;
+    color:black;
+}
+/*
     .tb_table thead tr td:nth-child(3) {
         text-align: center;
-        width: 75px;
-        height: 28px;
+        width: 95px;
+        height: 32px;
     }
 
-    .tb_table tbody tr td:nth-child(3) {
-        text-align: center;
-        width: 75px;
-        height: 25px;
-    }
+.tb_table tbody tr td:nth-child(3) {
+    text-align: center;
+    width: 95px;
+    height: 25px;
+}
 
 
 
-    .tb_table thead tr td:nth-child(4) {
-        text-align: center;
-        width: 75px;
-        height: 28px;
-    }
+.tb_table thead tr td:nth-child(4) {
+    text-align: center;
+    width: 95px;
+    height: 28px;
+}
 
-    .tb_table tbody tr td:nth-child(4) {
-        text-align: center;
-        width: 75px;
-        height: 25px;
-    }
+.tb_table tbody tr td:nth-child(4) {
+    text-align: center;
+    width: 95px;
+    height: 25px;
+}
 
 
 
-    .tb_table thead tr td:nth-child(5) {
-        text-align: center;
-        width: 75px;
-        height: 28px;
-    }
+.tb_table thead tr td:nth-child(5) {
+    text-align: center;
+    width: 95px;
+    height: 28px;
+}
 
-    .tb_table tbody tr td:nth-child(5) {
-        text-align: center;
-        width: 75px;
-        height: 25px;
-    }
+.tb_table tbody tr td:nth-child(5) {
+    text-align: center;
+    width: 95px;
+    height: 25px;
+}*/

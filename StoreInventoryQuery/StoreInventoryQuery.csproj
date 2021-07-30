@@ -123,8 +123,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\ImgResponse.cs" />
+    <Compile Include="Common\ImgUtil.cs" />
+    <Compile Include="Common\Logger.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\SweetController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -149,13 +153,17 @@
     <Content Include="Resources\Img\goods.png" />
     <Content Include="Resources\Img\logo.png" />
     <Content Include="Resources\Img\pwd.png" />
+    <Content Include="Resources\Img\sel.png" />
     <Content Include="Resources\Img\SM.png" />
     <Content Include="Resources\Img\SS.png" />
     <Content Include="Resources\Img\user.png" />
     <Content Include="Resources\Img\loginbody.png" />
+    <Content Include="Resources\Scripts\Home\Home.js" />
     <Content Include="Resources\Scripts\Login\Index.js" />
+    <Content Include="Resources\Scripts\Navigation\Index.js" />
     <Content Include="Resources\Style\Home\Home.css" />
     <Content Include="Resources\Style\Login\Index.css" />
+    <Content Include="Resources\Style\Navigation\Index.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\sweetalert\sweet-alert.less" />
@@ -163,7 +171,9 @@
     <Content Include="Content\sweetalert\sweet-alert-animations.less" />
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap\mixins.less" />
+    <Content Include="libman.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\JqueryCookie.js" />
     <Content Include="Scripts\sweetalert.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -189,11 +199,11 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Sweet\Alert.cshtml" />
+    <Content Include="Views\Navigation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Resources\Scripts\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

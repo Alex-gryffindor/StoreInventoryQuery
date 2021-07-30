@@ -12,5 +12,8 @@ namespace StoreInventoryQuery.Common
         /// 连接字符串
         /// </summary>
         public static readonly string F360str = ConfigurationManager.ConnectionStrings["F360"].ConnectionString;
+
+        //////
+        public static readonly string OssUrl = "http://120.76.56.45/swings_pim/api/product/img?partNumber=";
     }
 }

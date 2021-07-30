@@ -1,8 +1,19 @@
-﻿body {
+﻿ 
+    body:before {
+        content: "";
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../../Img/loginbody.png');
+        background-size: cover;
+    }
+html {
 }
 
-.imgtxt {
-    background-image: url('../../Img/loginbody.png');
+.imgtxt { 
 }
 
 .headtxt {
@@ -30,32 +41,31 @@
 }
 
 input::-webkit-input-placeholder {
-    font-size: 3px;
+    font-size: 20px;
     color: white;
 }
 
 .inputdiv {
-    margin-left: 10px;
-    width: 100%;
+    margin-left: 32px;
     padding-bottom: 5px;
     display: inline;
     border-bottom: 1px solid #5cb85c;
     border-bottom: 1px solid #5cb85c;
 }
 
-input {
+input { 
     outline: none;
 }
 
 .inputdiv img {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #name, #pwd {
-    font-size: 3px;
+    font-size: 20px;
     display: inline;
     color: white;
-    width: 80%;
+    width: 70%;
     border: 0px;
     BACKGROUND-COLOR: transparent;
 }
@@ -71,7 +81,7 @@ input {
 
 .headtxt2 {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 20px;
     color: ghostwhite;
     width: 100%;
     text-align: center;
@@ -91,8 +101,10 @@ input {
 }
 
 #loginbtn {
+    font-size:20px;
+    margin-top:4%;
     outline: none;
-    width: 94%;
+    width: 91%;
     margin: auto;
     text-align: center;
     color: dodgerblue;

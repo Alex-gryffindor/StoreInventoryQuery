@@ -27,13 +27,13 @@ namespace StoreInventoryQuery.Controllers
                 using (OracleConnection conn = new OracleConnection(Constants.F360str))
                 {
                     conn.Open();
-                    string sql = string.Format(@"select CHANNELID from regent.businessperson where code='{0}' and password='{1}'", name, pwd);
+                    string sql = string.Format(@"select d.code,d.name  from regent.businessperson a  left join regent.channel d on a.channelid=d.channelid where a.code='{0}' and a.password='{1}'", name, pwd);
                     OracleDataAdapter oda = new OracleDataAdapter(sql, conn);
                     DataTable dt = new DataTable();
                     oda.Fill(dt);
                     if (dt.Rows.Count > 0)
                     {
-                        return Json(new { code = false, data = dt.Rows[0]["CHANNELID"] });
+                        return Json(new { code = true, data =new { code=dt.Rows[0]["code"],storename= dt.Rows[0]["name"] } });
                     }
                     return Json(new { code = false, msg = "账号或密码错误" });
                 }

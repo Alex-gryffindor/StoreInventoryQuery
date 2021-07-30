@@ -1,209 +1,91 @@
 ﻿@{
-    ViewBag.Title = "库存助手";
-} 
-    <link href="~/Resources/Style/Home/Home.css?v=2021070100009" rel="stylesheet" />
-    <div style="width:100%;height:100%">
-        <div class="homeheadtxt">
-            <label class="back">
-                <img src="~/Resources/Img/JT.png" />
+    ViewBag.Title = "快速查询";
+}
+<link href="~/Resources/Style/Home/Home.css" rel="stylesheet" />
+<script src="~/Resources/Scripts/Home/Home.js?v=2021071501777"></script>
+<div style="width:100%;height:100%;background-color:#ECECF4">
+    <div class="homeheadtxt">
+        <label class="back">
+            <img src="~/Resources/Img/JT.png" />
+        </label>
+        <label style="font-weight:700;font-size:20px"> 快速查询</label>
+
+    </div>
+    <div class="homeinout">
+        <label class="homeinout2">
+            <label>
+                <img src="~/Resources/Img/SS.png" style="margin-left:10px;margin-right:1px" />
             </label>
-            <label> 库存助手</label>
 
-        </div>
-        <div class="homeinout">
-            <label class="homeinout2">
-                <img src="~/Resources/Img/SS.png" style="margin-left:7px;margin-right:1px" />
+            <label style=" width: 63.1%;" id="skulabel">
+                <input type="text" id="sku" placeholder="请输入货号查询" />
+            </label>
+            <label style="display:none" class="seldivno">
+                <input type="text" value="" id="sku2" disabled="disabled" />
 
-
-                @*<input type="text"  id="sku" />*@
-
-                <label style="   " class="seldivno">
-                    <input type="text" value="114L3B50C04UXL" id="sku2" disabled="disabled" />
-
-                    <label class="inputclose">
-                        <img src="~/Resources/Img/close.png" style="margin-top:-3px" />
-                    </label>
+                <label class="inputclose">
+                    <img src="~/Resources/Img/close.png" style="margin-top:-6px" />
                 </label>
-
-                <input type="button" value="查询" id="sel" />
             </label>
-        </div>
 
+            <input type="button" value="查询" id="sel" />
+        </label>
+    </div>
+
+    <div class="goodsinfo" style="font-size:20px;display:none">
         <div id="goodsnamediv">
             <img src="~/Resources/Img/goods.png" />
-            <span class="goodsname">可缮写提花开年有损</span>
+            <span class="goodsname"></span>
         </div>
-        <div style="" class="storename">本店库存（广州K11）</div>
-        <div id="goodsinfodiv" style="overflow: auto; height:150px;text-align:center">
+        <div style="" class="storename"></div>
+        @*<div id="goodsinfodiv" style="overflow: auto; height:200px;text-align:center">
             <table class="tb_table">
                 <thead>
                     <tr>
-                        <td  >颜色</td>
-                        <td  >尺码</td>
-                        <td >实际库存</td>
-                        <td  >占用库存</td>
-                        <td >可用库存</td>
+                        <td>颜色</td>
+                        <td>尺码</td>
+                        <td>实际库存</td>
+                        <td>可用库存</td>
+                        <td>占用库存</td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
+                <tbody class="tab_table_tbody">
+                   
+                   
                 </tbody>
             </table>
 
-            @*<table style="text-align:center ;width: 120%; display: block; ">
-                <thead style="height:30px;position:sticky">
-                    <tr>
-                        <td width="30">颜色</td>
-                        <td width="30">尺码</td>
-                        <td width="60">实际库存</td>
-                        <td width="60">占用库存</td>
-                        <td width="60">可用库存</td>
-                    </tr>
-                </thead>
+          
+        </div>*@ 
+    <div class="storeinfo" style="overflow: auto;height:210px">
+        @*<table>
+    <tbody>
+        <tr>
+            <td rowspan="3">
+                <img src="http://pim.gloria.com.cn/productImg/189C6F010/origin/main/EMM/%E7%BA%A2%E8%89%B2/1.jpg?x-oss-process=image/resize,w_400" />
+            </td>
+            <td> <label>压着蛋糕连衣裙</label>   </td>
+            <td>可用库存：3</td>
+        </tr>
+        <tr>
+            <td>R95-酒红/S</td>
+            <td>实际库存：3</td>
+        </tr>
+        <tr>
+            <td>武汉K11</td>
+            <td>占用库存：33</td>
+        </tr>
+    </tbody>
 
-                <tbody style="overflow:scroll;background-color: #ECECF4;" class="goodstbody">
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>黑色</td>
-                        <td>S</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-
-                </tbody>
-
-            </table>*@
-
-
-
-        </div>
-
-
-
-
-
-
-
+</table>*@
 
     </div>
+
+    </div>
+
+
+
+</div>
 
 
 
